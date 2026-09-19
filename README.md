@@ -2,6 +2,8 @@
 
 ## SAS 360 API MARKETING DATA LIBRARY
 
+> **Status: superseded.** This library has been replaced by [`sas-ci360-sol-data`](https://github.com/mnelson3/sas-ci360-sol-data) — the same Marketing Data API, rebuilt with mockable unit tests, typed exceptions, and safer configuration defaults. This repo is kept for historical reference; start new work in `sas-ci360-sol-data` instead.
+
 ### Overview
 
 The Marketing Data API for SAS Customer Intelligence 360 provides endpoints for analytic and customer tables. The Marketing Data API for SAS Customer Intelligence 360 enables you to manage data for customers and upload an allowlist or denylist for recommendations. You can use this REST API to perform these actions:
