@@ -35,19 +35,15 @@ This topic contains the following sections:
  * Required Python: >=3.6
  * Customer Intelligence 360 Tenant with Administrative Rights
  * SAS CI360 API Core Library:<br>
-   https://gitlab.sas.com/psd-ci-enablement/sas_ci360_api_core
+   https://github.com/mnelson3/sas_ci360_api_core
 <br><br>
 
 ### Installation
 
-To install the SAS CI360 API Marketing Data Library:
- 1. Open a terminal window (Unix/macOS) or command prompt (Windows)
- 1. Copy and paste the following line at the cursor<br>
-    pip install sasci360apimarketingdata --extra-index-url https://sas_ci360_api_marketing_data:${SAS_CI360_API_MARKETING_DATA_TOKEN}@gitlab.sas.com/api/v4/projects/49200/packages/pypi/simple
- 1. Press "Enter"<br>
-    The SAS CI360 API Marketing Data Library should install
-
-    `SAS_CI360_API_MARKETING_DATA_TOKEN` is a GitLab package registry deploy token. Request one from the project maintainer and export it in your shell before running the command above; do not commit it to source control.
+To install the SAS CI360 API Marketing Data Library from a clone of this repository:
+ 1. `git clone https://github.com/mnelson3/sas_ci360_api_marketing_data.git`
+ 1. `cd sas_ci360_api_marketing_data`
+ 1. `pip install .`
 <br><br>
 
 ### Getting Started
@@ -72,26 +68,18 @@ While this library is available for review, please note that it is considered a 
 For issues specific to sasci360apicore or sasci360apimarketingdata try updating the libraries.
 
 To update sasci360apicore:
- 1. Open a terminal window (Unix/macOS) or command prompt (Windows)
+ 1. Pull the latest changes from a clone of the [sas_ci360_api_core](https://github.com/mnelson3/sas_ci360_api_core) repository
+ 1. Open a terminal window (Unix/macOS) or command prompt (Windows) in that clone
  1. Copy and paste the following line at the cursor<br>
-    pip uninstall sasci360apicore
- 1. Press "Enter"<br>
-    The SAS CI360 API Core Library should uninstall
- 1. Copy and paste the following line at the cursor<br>
-    pip install sasci360apicore --extra-index-url https://sas_ci360_api_core:${SAS_CI360_API_CORE_TOKEN}@gitlab.sas.com/api/v4/projects/35734/packages/pypi/simple
+    pip install --upgrade .
  1. Press "Enter"<br>
     The SAS CI360 API Core Library should install
 
-    `SAS_CI360_API_CORE_TOKEN` is a GitLab package registry deploy token. Request one from the project maintainer and export it in your shell before running the command above; do not commit it to source control.
-
 To update sasci360apimarketingdata:
- 1. Open a terminal window (Unix/macOS) or command prompt (Windows)
+ 1. Pull the latest changes from a clone of this repository
+ 1. Open a terminal window (Unix/macOS) or command prompt (Windows) in that clone
  1. Copy and paste the following line at the cursor<br>
-    pip uninstall sasci360apimarketingdata
- 1. Press "Enter"<br>
-    The SAS CI360 API Marketing Data Library should uninstall
- 1. Copy and paste the following line at the cursor<br>
-    pip install sasci360apimarketingdata --extra-index-url https://sas_ci360_api_marketing_data:${SAS_CI360_API_MARKETING_DATA_TOKEN}@gitlab.sas.com/api/v4/projects/49200/packages/pypi/simple
+    pip install --upgrade .
  1. Press "Enter"<br>
     The SAS CI360 API Marketing Data Library should install
 <br><br>
